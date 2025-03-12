@@ -1,12 +1,14 @@
-Projeto de TCC - Stock PC
-Descrição
-Este repositório contém o trabalho de conclusão de curso (TCC) intitulado "Stock PC", desenvolvido pela Atenas Systems. O projeto é um site de marketplace dedicado à compra e venda de peças de PC, permitindo que usuários encontrem facilmente componentes para montar ou atualizar seus computadores.
+Stock PC - Marketplace de Peças de Computador
+Este repositório contém o Trabalho de Conclusão de Curso (TCC) intitulado "Stock PC", desenvolvido pela Atenas Systems e sua equipe. O Stock PC é um marketplace dedicado à compra e venda de peças de PC, facilitando a busca por componentes para montagem e upgrade de computadores.
 
-Funcionalidades
-Marketplace: Compra e venda de uma ampla variedade de peças de PC.
-Monte Seu PC: Uma funcionalidade desenvolvida para ajudar os usuários a montarem seus computadores, permitindo que escolham cada peça e vejam as opções compatíveis. Essa ferramenta facilita a personalização e garante que todas as partes funcionem juntas corretamente.
-Perfis de Usuários: Usuários podem criar perfis, listar suas peças disponíveis e gerenciar suas compras e vendas.
-Busca Avançada: Funcionalidade de busca para facilitar a localização de peças específicas.
+📌 Funcionalidades
+✅ Cadastro de usuários e vendedores
+✅ Listagem e pesquisa de componentes
+✅ Sistema de compra e venda integrado
+✅ Avaliação e comentários em produtos
+✅ Interface intuitiva e responsiva
 
-Licença
-Este projeto está licenciado sob a Atena Systems. Veja o arquivo LICENSE para mais detalhes.
+🚀 Tecnologias utilizadas
+Frontend: [Tecnologias usadas, ex: React, Vue, Angular]
+Backend: [Tecnologias usadas, ex: Node.js, Django, Laravel]
+Banco de dados: [Ex: MySQL, MongoDB, Firebase]
