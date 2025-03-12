@@ -9,9 +9,13 @@ Este repositório contém o Trabalho de Conclusão de Curso (TCC) intitulado "St
 
 ✅ Listagem e pesquisa de componentes
 
+✅ Filtros de pesquisa avançados
+
 ✅ Sistema de compra e venda integrado
 
 ✅ Avaliação e comentários em produtos
+
+✅ Montagem personalizada de computadores
 
 ✅ Interface intuitiva e responsiva
 
