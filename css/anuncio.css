@@ -1,0 +1,1188 @@
+/* ---------- Estilo Geral ---------- */
+
+/* Define a cor de fundo para o corpo da página */
+body {
+    background-color: #ffffff !important;
+}
+
+/* teste */
+
+.btn_anuncio {
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    background-color: #0075ff;
+    color: #ffffff;
+    transition: 0.15s;
+    display: flex;
+    outline: none;
+    padding: 0.25rem 4.5rem;
+    gap: 1rem;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_anuncio:hover {
+    background-color: #0057bb;
+
+    transition: 0.2s;
+    cursor: pointer;
+    transform: translate(0px, -1px);
+    box-shadow: 0px 5px 12px 1px #0057bb3d;
+}
+
+
+/* ---------- Estilo do Logo ---------- */
+
+/* Estilo para o logotipo */
+#logo2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.tempo-uso p{
+    gap: 0.5rem;
+    font-size: clamp(14px, 2vw, 1rem);
+    margin: 0;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.condicao{
+    border-radius: 0.3rem ;
+    width: fit-content;
+}
+
+.avaliacao{
+    border-radius: 2rem;
+    width: 5rem;
+    margin: 0;
+}
+
+.condicao-novo{
+    width: 5rem;
+}
+.condicao-usado{
+    width: 5rem;
+}
+
+.condicao::before{
+    transform: translate(-9px, -17px);
+}
+
+.titulo-secao{
+    text-align: left;
+}
+
+/* DROPDOWN */
+
+
+.content p{
+    text-align: left;
+    padding: 0 2rem;
+    margin: 0;
+}
+
+.dropdown .content{
+    opacity: 0;
+    transition: max-height 0.3s, padding 0.3s, 1s opacity;
+}
+
+
+.dropdown li{
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+
+.dropdown li:hover{
+    box-shadow: none !important;
+}
+
+.dropdown input[type="checkbox"]:checked + .dropdown-label{
+    box-shadow: none;
+}
+
+.dropdown input[type="checkbox"]:checked + .dropdown-label:hover{
+    box-shadow: none;
+}
+
+.dropdown li input{
+    display: none;
+}
+
+.dropdown input[type="checkbox"]:checked + .dropdown-label + .content{
+    padding: 2rem;
+    background: #fff;
+    border: 3px solid #f5f5f5;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+.dropdown input[type="checkbox"]:checked + .dropdown-label{
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+.dropdown input[type="checkbox"]:checked + .dropdown-label h3{
+    font-weight: bold;
+}
+
+.dropdown li .dropdown-label{
+    padding: 1rem 2rem;
+    gap: 1rem;
+    display: flex;
+    font-size: clamp(18px, 2vw, 1.4rem);
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.content div{
+    padding: 0;
+}
+
+.dropdown .content{
+    background-color: transparent;
+}
+
+.dropdown{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+/* .titulo-secao-check {
+    display: none; 
+}
+
+.titulo-secao-check:checked + .titulo-secao + .content-info {
+    display: block !important;
+}
+
+.content-info {
+    display: none !important;
+}
+
+
+.titulo-secao h3 {
+    cursor: pointer;
+}
+
+.titulo-secao label {
+    display: inline;
+}
+
+.titulo-secao-check + label h3::before {
+    content: '+';
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.titulo-secao-check:checked + label h3::before {
+    content: '-';
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+ */
+/* FIM DROPDOWN */
+
+/* Estilo para #descricao */
+#descricao {
+    background-color: #f5f5f5;
+
+}
+
+/* Estilo para #especific_tec */
+#especific_tec {
+    background-color: #f5f5f5;
+
+}
+
+/* Estilo para #info_adic */
+#info_adic {
+    background-color: #f5f5f5;
+
+}
+
+#info_secundaria {
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+}
+
+#info_secundaria.secao{
+    padding: 0;
+}
+
+
+/* ---------- Estilo dos Links ---------- */
+
+/* Define o estilo padrão para links não visitados */
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s;
+    /* Efeito de transição suave */
+}
+
+/* Define o estilo para links quando o mouse está sobre eles */
+
+/* ---------- Estilo para Textos em Negrito ---------- */
+
+/* Define a cor para textos em negrito */
+b {
+    color: #000000;
+}
+
+/* ---------- Estilo para Parágrafos ---------- */
+
+/* Define a cor para parágrafos */
+p {
+    color: #434343;
+}
+
+.p-footer{
+    color: #fff;
+}
+
+.footer-paragraph{
+    color: #fff;
+}
+
+/* ---------- Estilo para Títulos de Seção ---------- */
+
+/* Define a cor para títulos de seção */
+.titulo_secao {
+    color: #1a1a1a;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: clamp(15px, 2vw, 1.4rem);
+    margin: 0;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+/* ---------- Estilo para Seções ---------- */
+
+/* Define o estilo para seções */
+.secao {
+    background-color: #ffffff;
+    width: 90rem;
+    max-width: 96vw;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    clear: both;
+    /* padding: 3rem; */
+    border-radius: 10px;
+}
+
+/* Parágrafos dentro das seções */
+.secao p {
+    white-space: normal;
+    text-align: left;
+    padding: 0rem 1rem;
+}
+
+/* ---------- Estilo para Conteúdo Principal ---------- */
+
+/* Conteúdo principal */
+#main.secao {
+    display: grid;
+    grid-template-areas: "titulo-anuncio-600px titulo-anuncio-600px"
+        "imagens info_principal"
+        "resultado-frete resultado-frete";
+    grid-template-columns: 1fr 1fr;
+    /* padding: 3rem 0rem; */
+    min-height: 70vh;
+    align-items: start;
+    margin-top: 3rem;
+}
+
+#imagens {
+    grid-area: imagens;
+}
+
+#info_principal {
+    grid-area: info_principal;
+}
+
+.resultado-frete {
+    grid-area: resultado-frete;
+}
+
+.titulo-anuncio-600px {
+    grid-area: titulo-anuncio-600px;
+}
+
+/* Estilos adicionais podem ser aplicados conforme necessário */
+
+
+/* Área de exibição de imagens */
+#imagens {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    height: 25rem;
+    align-content: center;
+    padding: 0rem 1.5rem 0rem 0rem;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.anuncio {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: 250px;
+    margin: 10px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.anuncio:hover {
+    transform: translateY(-5px);
+}
+
+.anuncio .img_anunc img {
+    max-width: 100%;
+    height: auto;
+}
+
+.anuncio .titulo_anunc {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.anuncio .preco {
+    font-size: 18px;
+    color: #ff5a5f;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.anuncio button.btn_anunc {
+    background-color: #ff5a5f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    margin-top: 10px;
+}
+
+.btn_anunc {
+    box-shadow: 0px 0px 4px 4px rgba(180, 180, 180, 0.4);
+}
+
+.anuncio button.btn_anunc:hover {
+    background-color: #e05257;
+}
+
+/* Estilo para seções principais */
+.secao_main {
+    width: 42rem;
+    max-width: 48vw;
+    height: auto;
+
+}
+
+/* Seção de imagens secundárias 
+.imgs_secundarias {
+    width: 8rem;
+    height: 25rem;
+}*/
+
+.titulo-anuncio h1{
+    font-size: clamp(16px, 3vw, 2rem);
+    text-align: left;
+}
+
+#imgs_secundarias{
+    /* box-shadow: inset 0 -5px 3px -3px rgb(0, 0, 0, 0.1), inset 0 5px 3px -3px rgb(0, 0, 0, 0.1); */
+    height: 100%;
+    overflow: auto;
+    padding: 0.2rem;
+}
+
+#imgs_secundarias::-webkit-scrollbar {
+    height: 0.6rem;
+    width: 0.6rem;
+  }
+  
+  #imgs_secundarias::-webkit-scrollbar-thumb {
+    background-color: #38383877; /* Cor do polegar da barra de rolagem */
+    border-radius: 1rem;
+    transition: 0.3s ease all;
+  }
+  
+  #imgs_secundarias::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* Cor da faixa da barra de rolagem */
+  }
+
+  #imgs_secundarias::-webkit-scrollbar-thumb:hover{
+    background-color: #0075ff25;
+  }
+
+/* Estilo para imagens secundárias */
+.img_sec {
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    transition: 0.3s all ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    border: 1px solid rgb(200 200 200);
+    border-radius: 10px;
+}
+
+.img_sec:hover{
+    transform: scale(1.05);
+}
+
+
+
+/* Estilo para imagens secundárias */
+.img_sec img {
+    max-width: 3rem;
+    display: flex;
+}
+
+/* Imagem principal */
+#img_principal {
+    width: 24rem;
+    height: 24rem;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para imagem principal */
+#img_principal img {
+
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.5s ease;
+    cursor: zoom-in;
+
+    padding: 1rem;
+
+}
+
+#imagem-principal:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* Área de informações principais */
+#info_principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 3rem;
+    height: 100%;
+    width: 100%;
+}
+
+/* Informações gerais */
+#info_geral {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+
+
+/* Campo de entrada para CEP */
+#frete input {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    height: 80%;
+    outline: none;
+    border-radius: 8px;
+    text-align: left;
+    border: 1px solid #c4cbda;
+    font-size: 1.05em;
+    padding: 0 0.2rem;
+    width: 12rem;
+    padding: 1rem;
+}
+
+#frete input::placeholder {
+    font-size: 1.05em;
+}
+
+#frete label {
+    display: flex;
+    align-items: center;
+    font-size: clamp(15px, 2vw, 1.05rem);
+}
+
+#frete{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    min-height: 5rem;
+    margin-top: 2rem;
+    flex-direction: column;
+}
+
+#fretes{
+    width: 50%;
+    margin: 2rem auto;
+}
+
+#fretes h5{
+    font-weight: bold;
+}
+
+/* Botão para calcular frete */
+#btn_frete {
+    background-color: transparent;
+    color: #1ca314;
+    border: 1px solid #1ca314;
+    font-size: 17px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.15s;
+    outline: none;
+    width: fit-content;
+    height: 80%;
+    padding: 0rem 1rem;
+}
+
+
+.avalia-frete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+
+.avaliacao-input{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    min-height: 5rem;
+    flex-direction: column;
+
+    visibility: hidden;
+}
+
+.avaliacao-input form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    gap: 0.25rem;
+}
+
+#btn_avaliacao{
+    background-color: transparent;
+    color: #ffab00;
+    border: 1px solid #ffab00;
+    font-size: 17px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.15s;
+    outline: none;
+    width: fit-content;
+    height: 80%;
+    padding: 0rem 1rem;
+}
+
+#btn_avaliacao:hover{
+    background-color: #ffab00;
+    color: #fff;
+}
+
+.avaliacao-input input{
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    text-align: center;
+    height: 80%;
+    outline: none;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #c4cbda;
+    font-size: 1.05em;
+    padding: 0 0.2rem;
+    width: 3rem;
+    padding: 1rem 0rem;
+}
+
+.avaliacao-input label{
+    font-size: clamp(15px, 1vw, 1.05rem);
+    font-weight: bold;
+}
+
+.avaliacao-input span{
+    font-size: clamp(19px, 1vw, 1.3rem);
+    transform: translate(1px, -2px);
+    display: flex;
+    height: 100%;
+    font-weight: bold;
+    margin-right: 1rem;
+    align-items: flex-end;
+}
+
+
+/* Estilo do botão de frete no hover */
+#btn_frete:hover {
+    background-color: #1ca314;
+    color: #fff;
+    border-color: #1ca314;
+}
+
+.inputs-frete{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: fit-content;
+    gap: 0.5rem;
+}
+
+/* Área de compra */
+#compra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Preço do produto */
+#preco {
+    color: #1B1F27;
+    text-transform: uppercase;
+    font-size: clamp(23px, 3vw, 2rem);
+    width: fit-content;
+    /*margin-bottom: 3rem;
+    display: flex;
+    justify-content: flex-start;*/
+}
+
+.adc-carrinho{
+    width: 20%;
+    height: 2rem;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #ff7800;
+    outline: none;
+    border: none;
+    transition: background-color .15s ease;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adc-carrinho img{
+    max-width: 25px;
+}
+
+.adc-carrinho:hover{
+    background-color: #cf6100;
+}
+
+
+.linha-info-sec {
+    border-top: 1px solid #d1d1d1;
+    width: 90%;
+    display: inline-block;
+}
+
+#form_carrinho{
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.num-estoque{
+    position: absolute;
+    transform: translate(-6px, 36px);
+}
+
+.info-geral{
+    /* display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center; */
+
+    display: grid;
+    grid-template-areas: "avaliacao condicao"
+        "marca tempo-uso";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 25px;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+.avaliacao {
+    grid-area: avaliacao;
+}
+
+.condicao {
+    grid-area: condicao;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.tempo-uso{
+    grid-area: tempo-uso;
+}
+
+.marca {
+    grid-area: marca;
+    font-size: clamp(14px, 2vw, 1rem);
+}
+
+
+.frete{
+    margin: 1rem 0;
+}
+
+.info_frete{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0; 
+}
+
+.secoes_frete{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin: 0.6rem 0;
+}
+
+.secao_frete{
+    flex:1;
+    font-weight: bold;
+}
+
+.container_input_frete{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    height: 1.5rem;
+    margin: 0.2rem 0;
+}
+
+.container_input_frete img{
+    max-height: 1.5rem;
+}
+
+
+.container_input_frete span{
+    flex: 1;
+    font-size: clamp(14px, 2vw, 1rem);
+}
+
+.container_input_frete span img{
+    margin: auto;
+    max-width: 5rem;
+}
+
+.titulo-anuncio-600px{
+    display: flex;
+}
+
+.titulo-anuncio-600px h1{
+    text-align: left;
+    width: 100%;
+    font-size: clamp(16px, 3vw, 2rem);
+}
+
+.comentario{
+    display: flex;
+    flex-direction: column !important;
+    padding: 0 2rem !important;
+}
+
+.comentario h3{
+    font-weight: bold;
+    font-size: clamp(15px, 2vw, 1.1rem);
+}
+
+.nome-usuario-coment{
+    font-weight: bold;
+    font-size: clamp(16px, 2vw, 1.2rem);
+}
+
+.conteudo-coment{
+    padding: 0 !important;
+}
+
+.contenteudo-comentario{
+    margin-bottom: 2rem;
+    display: flex;
+    padding: 0 !important;
+    flex-direction: column !important;
+    gap: 0.5rem;
+    font-size: clamp(12px, 2vw, 1rem);
+}
+
+
+
+.divisao-comentario{
+    width: 100%;
+    height: 1px;
+    background-color: #0000002b;
+    margin: 1rem 0 2rem 0;
+    
+}
+
+.content-comentario{
+    display: flex;
+    flex-direction: column !important;
+    gap: 2rem;
+    padding: 0 !important;
+}
+
+
+/* Formulario comentario */
+
+.comentario-input{
+    flex-direction: column !important;
+    width: 100%;
+    align-items: flex-start;
+    gap: 0.5rem ;
+    padding: 0 !important;
+}
+
+.comentario-input form{
+    width: 100%;
+}
+
+.comentario-input form input{
+    display: block !important;
+}
+
+.comentario-input form input[type="text"]{
+
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #0000007a;
+    color: #000000;
+    text-align: start;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.comentario-inputs{
+    display: flex;
+    flex-direction: row !important;
+    padding: 0 !important;
+    width: 100%;
+}
+
+.comentario-inputs select{
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.comentario-inputs select:focus{
+    border: 0;
+    outline: 0;
+    box-shadow: 0 0 0 0.3rem rgba(0, 123, 255, 0.25), 0 0 0 0.1rem #80bdff;
+    transition: all 0.3s ease;
+}
+
+.comentario-input form input[type="submit"], #btn_alterar{
+    padding: 0.5rem 1rem;
+    background-color: #0075ff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: 0.3s all ease;
+    font-size: clamp(12px, 1vw, 1rem);    
+}
+
+.comentario-input form input[type="submit"]:hover, #btn_alterar:hover{
+    background-color: #0057bb;
+}
+
+.comentario-input form input[type="text"]:focus{
+    border: 0;
+    outline: 0;
+    box-shadow: 0 0 0 0.3rem rgba(0, 123, 255, 0.25), 0 0 0 0.1rem #80bdff;
+    transition: all 0.3s ease;
+}
+
+#editar_avaliacao{
+    display: none;
+}
+
+.comentario input{
+    display: block !important;
+}
+
+.container_botoes{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0 !important;
+    flex-wrap: wrap;
+    gap: 4rem !important;
+    justify-content: flex-start;
+}
+
+#btn_excluir, #btn_cancelar{
+    padding: 0.5rem 1rem;
+    border: #ca3c3c;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    color: #ca3c3c;
+    transition: 0.3s all ease;
+    font-size: clamp(12px, 1vw, 1rem);
+}
+
+#btn_excluir:hover, #btn_cancelar:hover{
+    background-color: #ca3c3c;
+    color: #fff;
+}
+
+#login_redirect{
+    background-color: #fff;
+    color: #0075ff;
+    text-decoration: underline;
+    border: none;
+    font-weight: bold;
+}
+
+.comentario-input form label{
+    font-size: 18px !important;
+    font-weight: bold;
+    font-size: clamp(14px, 2vw, 1rem);
+    width: 100%;
+    text-align: left;
+}
+
+.comentario-input form{
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown li:hover{
+    background-color: #ccc;
+}
+
+.dropdown li .dropdown-label:hover{
+    background-color: unset !important;
+}
+
+
+@media(max-width: 1100px){
+    #imgs_secundarias{
+        display: flex;
+        width: 100%;
+        height: auto;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+
+@media(max-width: 1200px){
+    #compra{
+        flex-direction: column;
+        gap: 2rem;
+    
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .btn_anuncio{
+        width: 100%;
+        letter-spacing: 1px;
+    }
+   
+    #form_carrinho{
+        width: 100%;
+    }
+
+}
+
+
+@media(max-width: 1103px){
+    #img_principal{
+        height: 17rem;
+    }
+}
+
+@media(max-width: 680px){
+    #img_principal{
+        height: 12rem;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .condicao {
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    .condicao::before{
+        transform: translate(-9px, -17px);
+    }
+
+    .avalia-frete{
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 1030px){
+    #fretes{
+        margin: 2rem 0;
+        width: 100%;
+    }
+}
+
+@media(max-width: 835px){
+    #btn_frete{
+        padding: 0rem 0.5rem;
+    }
+    #frete input{
+        padding: 1rem 0.5rem;
+        width: 10rem;
+    }
+}
+
+@media (max-width: 595px){
+    #main.secao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #imagens{
+        padding: 0;
+    }
+
+    .secao_main{
+        width: 95%;
+        max-width: unset;
+    }
+    .resultado-frete{
+        width: 100%;
+    }
+    .titulo-anuncio-600px{
+        display: block;
+        width: 100%;
+    }
+    .titulo-anuncio-600px h1{
+        font-size: 20px;
+        text-align: left;
+    }
+    .titulo-anuncio{
+        display: none;
+    }
+
+    .inputs-frete{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%
+    }    
+    #frete input{
+        width: 100%;
+    }
+    #btn_frete{
+        width: 100%;
+        padding: 0.5rem;
+    }
+    #compra{
+        gap: 1rem;
+    }
+    #info_principal{
+        row-gap: 1rem;
+    }
+
+    .content p, .comentario{
+        padding:0rem !important;
+    }
+
+    .contenteudo-comentario{
+        gap: 0;
+    }
+
+    .avaliacao-input{
+        justify-content: space-between;
+    }
+
+    .avaliacao-input form{
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .avaliacao-input span{
+        transform: translate(1px, 14px);
+    }
+
+    .avaliacao-input #btn_frete{
+        width: fit-content;
+        padding: 0.5rem 0.6rem;
+    }
+}
+
+@media (max-width: 1185px){
+    .avalia-frete{
+        flex-direction: column;
+    }
+    .avaliacao-input{
+        align-items: flex-end
+    }
+    
+}
+
+@media(max-width: 650px){
+    .comentario-inputs select{
+        padding: 0.5rem;
+    }
+
+    .comentario-inputs{
+        flex-direction: column !important;
+        gap: 1rem;
+    }
+}

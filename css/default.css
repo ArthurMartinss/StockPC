@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Graphik-regular', Poppins, sans-serif !important;
+    text-align: center;
+
+    
+}
+
+.fa-classic, .fa-regular, .fa-solid, .far, .fas{
+    font-family: "Font Awesome 6 Free" !important;
+}
+
+@font-face {
+    font-family: 'Graphik-regular'; src: url('../fonts/Graphik/GraphikRegular.otf') format('opentype'), 
+    url('../fonts/Graphik/GraphikBlack.otf') format('opentype'),
+    url('../fonts/Graphik/GraphikBold.otf') format('opentype'),
+    url('../fonts/Graphik/GraphikMedium.otf') format('opentype'),
+    url('../fonts/Graphik/GraphikSemibold.otf') format('opentype');
+    font-weight: normal;
+    font-style:normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    padding-top: 7.5vh;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 5px;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animates 5s linear infinite;
+}
+
+@keyframes animates {
+
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+footer {
+    height: 10rem;
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-image: url(../img/background\ gif.gif);
+
+    bottom: 0;
+}
+
+
+#form_btn_login {
+    margin-left: auto;
+}
+
+
+@keyframes animate {
+    0% {
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+}

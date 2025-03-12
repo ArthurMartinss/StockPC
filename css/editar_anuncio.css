@@ -1,0 +1,19 @@
+.sidebar-dash.activeDash  .cascata-editar-anunc span{
+    display: block;
+}
+
+.cascata-editar-anunc{
+    display: flex !important;
+    flex-wrap: wrap;
+}
+
+.a_meus_anunc{
+    color: #0075ff !important;
+    /* border-bottom: 3px solid #0075ff !important; */
+    background-color: #0075ff15 !important;
+    /* border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important; */
+}

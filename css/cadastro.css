@@ -1,0 +1,423 @@
+
+/* Body styles */
+body {
+  font-size: 16px;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 !important;
+}
+
+.editar-top{
+  color: #000;
+}
+
+.btn-voltar-compras{
+  font-size: clamp(19px, 3vw, 1.25rem);
+  display: flex;
+  text-align: left;
+  text-decoration: none;
+  font-weight: bold;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.formulario-cadastro{
+  display: flex;
+  padding: 0rem 1rem;
+}
+
+form textarea {
+  resize: vertical;
+  padding-top: 10px;
+  padding-right: 10px;
+  min-height: 8.5rem;
+}
+
+
+header {
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
+
+}
+
+header a {
+  text-decoration: none;
+
+}
+
+header h1 {
+  color: #0075ff;
+  padding: 0px 0px 0px 25px;
+  text-align: left;
+}
+
+header h1:hover {
+  color: #0057bb;
+  transition: 0.2s;
+}
+
+
+
+/* Form styles */
+form {
+
+  width: 60rem;
+  height: auto;
+  margin: auto;
+  border-radius: 30px;
+  padding: 3rem;
+  background-color: #fff;
+  margin-bottom: 2rem;
+
+}
+
+form input[type="text"], input[type="number"]{
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #c4cbda;
+  outline: 0;
+  box-shadow: 0 0 0 0.3rem rgba(0, 123, 255, 0.25), 0 0 0 0.1rem #80bdff;
+
+  transition: all 0.3s ease;
+}
+
+
+
+
+form input[type="radio"] {
+  width: 2.25vh;
+  height: 2.25vh;
+  margin-right: 5px;
+}
+
+.cadastro{
+  margin: auto;
+  width: 95%;
+}
+
+
+.cadastre-se .btn-voltar-compras{
+  padding: 0 0 1rem 0!important;
+  font-size: 1.2rem !important;
+}
+
+.btn-cad {
+  display: flex;
+  /* background-color: #0075ff; */
+  /* border: none; */
+  width: 100%;
+  /* font-size: 1.3em; */
+  /* font-weight: bold; */
+  /* border-radius: 8px; */
+  /* color: #fff; */
+  /* cursor: pointer; */
+  align-items: center;
+  justify-content: center;
+}
+
+.tipo_usuario{
+  width: 95%;
+  margin: 1rem auto;
+}
+
+form h2 {
+  font-size: clamp(22px, 3vw, 2rem);
+  margin-bottom: 3.5rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+.entrar-items {
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.radio {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: left;
+  flex-wrap: nowrap;
+  cursor: default;
+  margin: 0.25rem 0;
+  width: 100%;
+}
+
+input::placeholder {
+  color: #a1a1a1;
+  font-size: 14px;
+  text-align: left;
+}
+
+form label
+{
+  display: flex;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #464646;
+}
+
+/* input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+textarea,
+select {
+  background-color: transparent;
+  color: #000000;
+  height: 45px;
+  outline: none;
+  border-radius: 8px;
+  padding-left: 10px;
+  text-align: left;
+  width: 100%;
+  border: 1px solid #c4cbda;
+} */
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+/* input[type="file"], */
+textarea,
+select {
+  width: -webkit-fill-available;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #b9b9b9;
+  color: #000000;
+  text-align: start;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+
+
+input[type="file"] {
+  display: none;
+}
+
+/* Estilize o rótulo para se parecer com um botão */
+label.upload-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #000000;
+  cursor: pointer;
+  border: 1px solid #0000007a;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  transition: 0.3s;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Altere a aparência do botão quando o mouse passar por cima */
+label.upload-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+select option{
+  font-size: 1.1em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="submit"] {
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  background-color: #0075ff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.cond_prod{
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.mens {
+  padding: 0.2rem 0;
+  color: #ff0000;
+}
+
+#mens_imgs_sec li, #mens_img_princ li{
+  color: #575757;
+  font-size: clamp(12px, 2vw, 1rem);
+  text-align: left;
+}
+
+input[type="submit"]:hover {
+  background-color: #0057bb;
+  color: #a0a4c4;
+}
+
+footer {
+  height: 10rem;
+  width: 100%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-image: url(../img/background\ gif.gif);
+}
+
+.checkbox{
+  display: flex;
+}
+
+.checkbox label{
+  margin: 0 0.5rem;
+}
+
+input[type="checkbox"]{
+  width: 1.5rem;
+}
+
+.genero .entrar-items{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+  align-items: flex-start;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.genero .entrar-items label{
+  margin: 0;
+}
+
+.numero-etapa{
+  display: flex;
+  /* margin: auto; */
+  background: #dddddd4f;
+  color: #000000;
+  border: 4px solid #ffffff;
+  border-radius: 100%;
+  height: 2.5rem;
+  width: 5rem;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: clamp(14px, 2vw, 1rem);
+}
+
+.numero{
+  display: flex;
+  /* margin: auto; */
+  background: #fff;
+  border: 5px solid #ffffff;
+  border-radius: 100%;
+  height: 2rem;
+  width: 4rem;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: clamp(14px, 2vw, 1rem);
+}
+
+
+.linha-etapas-cad{
+  height: 1px;
+  background: #000;
+  width: inherit;
+  /* margin: 0 1rem; */
+}
+
+
+.etapas-cad{
+  width: 100%;
+  display: flex;
+  height: fit-content;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+
+
+.entrar-items-localidade .entrar-items{
+  width: 100%;
+}
+
+.estado{
+  width: fit-content !important;
+  display: flex;
+}
+
+.entrar-items-localidade{
+  display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+@media(max-width: 514px){
+  form{
+    padding: 1.5rem 2rem;
+  }
+}
+
+
+@media(max-width: 800px){
+  .numero-etapa{
+    width: 5.5rem;
+  }
+}
+
+@media(max-width: 650px){
+  .numero-etapa{
+    width: 6rem;
+  }
+}
+
+@media(max-width: 430px){
+  .entrar-items-localidade{
+    display: flex;
+      flex-direction: column;
+      gap: 0rem !important;
+  }
+
+  .estado{
+    width: 100% !important;
+  }
+}

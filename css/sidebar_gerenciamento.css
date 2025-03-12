@@ -1,0 +1,464 @@
+
+body{
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7 !important;
+
+}
+
+#grid{
+    margin-right: 0;
+}
+
+.btn-voltar{
+    display: flex ;
+    justify-content: center !important;
+    padding: 1rem ;
+    text-decoration: none;
+    width: fit-content;
+    transition: all 0.3s ease;
+    color: #0075ff !important;
+    border-radius: 5px;
+}
+
+.sidebar-dash.activeDash .btn-voltar{
+    display: flex;
+    justify-content: start !important;
+}
+
+.header-voltar{
+    /* border-top: 1px solid #c4c4c4; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.btns-usuario{
+    padding: 0.5rem;
+}
+
+.btns-usuario{
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    height: fit-content;
+    box-shadow: 0px 0px 0px 2px #0075ff25;
+    width: 100%;
+
+}
+
+.btns-usuario a{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1rem 1.25rem;
+    justify-content: center;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.sidebar-dash.activeDash .btns-usuario a{
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+.active{
+    color: #0075ff !important;
+    /* border-bottom: 3px solid #0075ff !important; */
+    background-color: #0075ff15 !important;
+    /* border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important; */
+}
+
+.btn-voltar img{
+    max-width: 35px;
+}
+
+.sidebar-dash{
+    width: 6rem;
+    background-color: #fff;
+    height: 100vh;
+    padding: 1.5rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    /* overflow: hidden; */
+    transition: all 0.1s ease;
+    border-right: 10px solid #ffffff;
+    border-left: 10px solid #ffffff;
+}
+
+
+.sidebarDash-top{
+    padding: 0rem 0rem 1rem 0rem;
+    width: 100%;
+    /* border-bottom: 2px solid #c4c4c4; */
+    border-radius: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebarDash-top a{
+    text-decoration: none;
+}
+
+
+.sidebarDash-h2{
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+.logo-dash-top{
+    margin-bottom: 1.5rem;
+}
+
+
+.logo-sidebar{
+    filter: invert(100%);
+    width: 5rem;
+}
+
+.div-logo-sidebar{
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sidebar-dash.activeDash ~ .sct-body{
+    left: 20rem;
+    width: calc(100% - 20rem);
+}
+
+.sct-body{
+    position: relative;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+    top: 0;
+    left: 6rem;
+    transition: all 0.3s ease;
+    width: calc(100% - 6rem);
+}
+
+.sct-h2{
+    font-weight: bold;
+    text-align: left;
+    padding: 1rem;
+    display: flex;
+    color: #0075ff;
+    font-size: clamp(22px, 3vw, 1.7rem);
+    flex-direction: row;
+    gap: 1rem;
+    align-items: baseline;
+    flex-wrap: wrap;
+    
+}
+
+.btn-sidebar-geren{
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    width: fit-content;
+
+    transition: all 0.3s ease;
+}
+
+.btn-sidebar-geren:hover{   
+    filter: invert(100%);
+}
+
+/* ACTIVE = Ativo, Normal, Aberto*/
+
+/* sidebar */
+.sidebar-dash.activeDash{
+    width: 20rem;
+}
+
+/* botao + gerenciar */
+.sidebar-dash.activeDash .sidebarDash-h2{
+    display: block;
+
+}
+
+.sidebarDash-h2{
+    display: none;
+
+    transition: opacity 0.1s ease;
+}
+
+
+/* Todos Span */
+
+.sidebar-dash span{
+    display: none;
+}
+
+.sidebar-dash.activeDash .sidebardash-span{
+    display: block;
+}
+
+.sidebar-dash .sidebardash-icons{
+    font-size: 1.4rem;
+    height: unset;
+}
+
+.sidebar-dash .fa-solid{
+    margin-right: 0;
+}
+
+/* Botão voltar */
+
+/* .sidebar-dash .icone-voltar{
+    display: block;
+    color: #0075ff;
+}
+
+.sidebar-dash .icone-voltar:hover{
+    background-color: #000;
+    width: 100%;
+}
+
+.sidebar-dash .btn-voltar{
+    display: none;
+}
+
+.sidebar-dash.activeDash .btn-voltar{
+    display: block;
+}
+
+.sidebar-dash.activeDash .icone-voltar{
+    display: none;
+} */
+
+.sidebarDash-flutuante{
+    display: none;
+    padding: 0.9rem 0.9rem 0.7rem 0.9rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    cursor: pointer;
+}
+
+.sidebarDash-flutuante .bi-list{
+    font-size: 1.8rem;
+    color: #000;
+    line-height: 1;
+}
+
+.btn-sidebar-geren .bi-list{
+    font-size: 1.8rem;
+    color: #000;
+    display: flex;
+}
+
+.sidebarDash-flutuante-div{
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    margin: 0.5rem;
+}
+
+.ri-menu-line{
+    font-size: 2rem;
+    color: #000;
+}
+/* 
+#sairLink{
+    margin-top:1.5rem ;
+} */
+
+.cascata{
+    color: #0075ff;
+    gap: 0.3rem;
+    margin: 1rem 0;
+    text-align: left;
+    width: 100%;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.cascata i{
+    font-size: 1.3rem;
+}
+
+.sidebar-dash.activeDash .cascata{
+    justify-content: center;
+}
+
+.cascata span{
+    display: block;
+    font-size: clamp(12px, 2vw, 1rem);
+}
+
+@media (max-width: 1270px) {
+    .sidebarDash-h2{
+        font-size: 1.5em;
+    }
+    .logo-sidebar{
+        width: 5rem;
+    }
+
+    .sct-body #botao-criar-anunc{
+        right: 0.5rem;
+        bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 540px){
+    .sidebar-dash{
+        width: 5rem;
+    }
+    .logo-sidebar{
+        width: 4rem;
+    }
+    .sct-body{
+        left: 5rem;
+        width: calc(100% - 5rem) ; 
+    }
+}
+
+@media (max-width: 714px){
+    .sidebar-dash.activeDash{
+        width: 10rem;
+    }
+
+    .sidebar-dash.activeDash .btns-usuario{
+        font-size: 0.9em;
+        gap: 1rem;
+    }
+
+    .sidebar-dash.activeDash .sidebarDash-h2{
+        font-size: 1em;
+    }
+
+    .sidebar-dash.activeDash ~ .sct-body{
+        left: 10rem;
+        width: calc(100% - 10rem);
+    }
+
+    .sidebar-dash.activeDash .btns-usuario a{
+        padding: 0.5rem;
+        gap: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sidebar-dash.activeDash .sidebardash-icons{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 566px){
+    .sidebar-dash.activeDash{
+        width: 100%;
+        z-index: 999;
+    }
+
+    .sidebar-dash.activeDash .btns-usuario{
+        font-size: 1em;
+        width: 100%;
+    }
+    .sidebar-dash.activeDash .logo-sidebar{
+        width: 6rem;
+    }
+    .sidebar-dash.activeDash .sidebarDash-h2{
+        font-size: 1.6em;
+    }
+    .link_criar_anuncio{
+        font-size: 1em;
+    }
+
+    .sidebarDash-flutuante{
+        z-index: 9999;
+    }
+    .sidebar-dash.activeDash ~ .sct-body{
+        left: 0;
+        width: 100%;
+    }   
+
+    .sidebar-dash.activeDash .cascata span{
+        font-size: 1.1em;
+    }
+
+    .sidebar-dash.activeDash .btns-usuario a{
+        padding: 1rem 1.25rem;
+        gap: 0.5rem;
+
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .sidebar-dash.activeDash .sidebardash-icons{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .sidebar-dash{
+        display: none;
+    }
+
+    .sidebarDash-flutuante{
+        display: block;
+    }
+
+    .sct-body{
+        left: 0;
+        width: 100%;
+    }
+    .sidebar-dash.activeDash{
+        display: block;
+    }
+
+
+    .sct-meus-anunc-top{
+        margin-top: 2.5rem;
+    }
+
+    #botao-criar-anunc{
+        font-size: 0.8em;
+    }
+
+    .sidebarDash-flutuante{
+        background-color: #ffffffb8;
+
+        border: 2px solid #c4c4c4;
+        
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+
+    }
+
+    .sidebarDash-flutuante img{
+        width: 25px;
+    }
+
+
+
+}

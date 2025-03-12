@@ -1,0 +1,211 @@
+.link_criar_anuncio {
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+    background-color: #0075ff;
+    border-radius: 5px;
+}
+
+.link_criar_anuncio:hover{
+    background-color: #0057bb;
+    color: #fff;
+}
+
+
+#botao-criar-anunc{
+    background-color: #0075ff;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    text-decoration: none;
+
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    transition: opacity 0.4s ease, background-color 0.4s ease;
+    box-shadow: 0px 0px 25px -2px #00000091;
+
+}
+
+#botao-criar-anunc:hover{
+    background-color: #0057bb;
+}
+
+.fa-solid{
+    margin-right: 0.5rem;
+}
+
+.sct-meus-anunc-top{
+    top: 0;
+}
+
+.btns-edit-excluir{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.anuncio .btn_excluir, .anuncio .btn_editar{
+    opacity: 0 !important; 
+    transition: 0.3s ease all !important;
+}
+
+.anuncio:hover .btn_excluir, .anuncio:hover .btn_editar{
+    opacity: 1 !important; 
+}
+
+.reticencias{
+    opacity: 1;
+    transition: 0.1s ease all;
+    padding: 0.5rem 0.75rem;
+}
+
+.anuncio:hover .reticencias{
+    opacity: 0;
+}
+
+@media (hover:none), (hover:on-demand){
+    .anuncio .btn_excluir, .anuncio .btn_editar{
+        opacity: 1 !important; 
+    }
+
+    .reticencias{
+        display: none;
+    }
+}
+
+.btn_excluir i{
+    display: none;
+}
+
+.btn_excluir {
+    width: 6rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 1px solid #ca3c3c;
+    /* border: none; */
+    color: #ca3c3c;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn_excluir:hover {
+    background-color: #ca3c3c;
+    color: #fff;
+}
+
+.btn_editar {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #0075ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn_editar:hover {
+    background-color: #0057bb;
+}
+
+.btn_editar i{
+    display: none;
+}
+
+.btn-edit-exclu{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.btn-edit-exclu form{
+    width: 6rem;
+}
+
+.modal-footer #excluir{
+    opacity: 1 !important;
+    width: fit-content;
+}
+
+.modal-footer .btn-danger{
+    background-color: transparent;
+    color: #ca3c3c;
+    border: none;
+
+}
+
+.modal-footer .btn-danger:hover{
+    background-color: #ca3c3c;
+}
+
+.btn-edit-exclu img{
+    max-width: 25px;
+}
+
+.anuncio{
+    align-items: center;
+}
+
+#grid{
+    margin-top: 2rem;
+}
+
+body{
+    padding-top: 6.5rem;
+    background-color: #f7f7f7;
+}
+
+
+.modal-backdrop.show{
+    display: none;
+}
+
+.modal-dialog{
+    box-shadow: 0 0 60px 0px #0000004f;
+    border-radius: 0.5rem;
+}
+
+.btn_excluir_modal{
+    padding: 0.5rem;
+    background-color: #ca3c3c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn_excluir_modal:hover {
+    background-color: #791c1c;
+}
+
+@media (max-width: 500px) {
+    .btn-edit-exclu form, .btn_excluir{
+        width: 8rem;
+    }
+}

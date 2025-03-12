@@ -1,0 +1,44 @@
+.sidebar-dash.activeDash  .cascata-compra1 span{
+    display: block;
+}
+
+.cascata-compra2{
+    display: flex !important;
+    flex-wrap: wrap;
+}
+
+.a_minhas_compras{
+    color: #0075ff !important;
+    /* border-bottom: 3px solid #0075ff !important; */
+    background-color: #0075ff15 !important;
+    /* border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important; */
+}
+
+.formulario{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0rem 1rem;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.formulario form select:disabled{
+    border-color: #b9b9b9;
+    color: #787878;
+}
+
+@media(max-width: 415px){
+    .formulario form{
+        width: 100%;
+    }
+}

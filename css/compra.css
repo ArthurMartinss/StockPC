@@ -1,0 +1,270 @@
+.sidebar-dash.activeDash  .cascata-compra1 span{
+    display: block;
+}
+
+.cascata-compra1{
+    display: flex !important;
+    flex-wrap: wrap;
+}
+
+.a_minhas_compras{
+    color: #0075ff !important;
+    /* border-bottom: 3px solid #0075ff !important; */
+    background-color: #0075ff15 !important;
+    /* border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important; */
+}
+
+body{
+    min-height: 100vh;
+    padding-top: 15vh;
+    background-color: #f7f7f7;
+}
+
+#resumo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+#resumo span{
+    font-weight: bold;
+}
+
+#resumo p{
+    font-size: clamp(10px, 1vw, 1rem);
+    margin: 0;
+}
+
+#id_compra{
+    color: #000;
+}
+
+#compra{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    width: auto;
+    background-color: #f7f7f7;
+    margin: 2rem 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.resumo-grid{
+    background: #fff;
+    padding: 2rem;
+    display: flex;
+    border-radius: 30px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.item-resumo{
+    background: #f8f8f8;
+    padding: 0.8rem;
+    border-radius: 5px;
+}
+
+.item-resumo p{
+    text-align: left;
+}
+
+
+
+.item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    transition: 0.3s;
+    width: 22rem;
+    height: 34rem;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.item:hover{
+    box-shadow: #b4b4b448 0px 0px 22px 3px;
+}
+
+.item p{
+    font-size: clamp(12px, 1vw, 1rem);
+}
+
+.imagem{
+    height: 18rem;
+    width: 18rem;
+    max-height: 100%;
+    margin: auto;
+}
+
+.imagem img{
+    flex: 1;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.titulo{
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.titulo p{
+    height: fit-content;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    margin: 0;
+    font-weight: bold;
+}
+
+.unidades{
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.unidades span, .preco_compra span{
+    font-weight: bold;
+}
+
+.preco_compra{
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn-voltar-compras{
+    font-size: clamp(19px, 3vw, 1.25rem);
+    display: flex;
+    text-align: left;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.options a{
+    text-decoration: none;
+    /* border: 1px solid #0075ff; */
+    padding: 0.5rem;
+    color: #0075ff;
+    border-radius: 5px;
+    transition: ease 0.3s all;
+}
+
+.options a:hover{
+    color: #fff;
+    background-color: #0075ff;
+
+}
+
+.options span{
+    font-size: clamp(12px, 2vw, 13px);
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    gap: 0.5rem;
+}
+
+@media(max-width: 510px){
+    .imagem{
+        width: 15rem;
+        height: 15rem;
+    }
+    #compra{
+        padding: 1rem;
+        margin: 0;
+    }
+}
+
+@media(max-width:380px){
+    .imagem{
+        width: 12rem;
+        height: 12rem;
+    }
+
+    #compra{
+        padding: 0.5rem;
+    }
+    .item{
+        width: 18rem;
+    }
+}
+
+@media(max-width: 1185px){
+    .resumo-grid{
+        gap: 0.5rem;
+    }
+}
+
+@media(max-width: 1377px){
+    .resumo-grid{
+        padding: 1rem;
+        border-radius: 20px;
+    }
+
+    .item-resumo{
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+}
+
+@media(max-width: 1052px){
+    .resumo-grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 1.5rem;
+    }
+    .item-resumo{
+        border-radius: 10px;
+        padding: 0.75rem;
+    }
+
+}
+
+@media(max-width: 655px){
+    .resumo-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 1rem;
+    }
+
+}

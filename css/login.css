@@ -1,0 +1,176 @@
+h1 {
+  display: inherit;
+  margin-bottom: 5px;
+}
+
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0 !important ;
+}
+
+header {
+  margin-top: 1.25rem;
+  text-align: left;
+}
+
+header a {
+  text-decoration: none;
+
+}
+
+header h1 {
+  color: #0075ff;
+  padding: 25px 0px 0px 25px;
+  margin: 0px 0px 5px;
+}
+
+header h1:hover {
+  color: #0057bb;
+  transition: 0.2s;
+}
+
+.fa-solid.fa-arrow-left.fa-lx {
+  margin-right: 0.1875rem;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 3rem;
+  margin: 20px auto;
+  box-shadow: #9c9c9c11 0px 0px 7px 5px;
+}
+
+form h1{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #464646;
+}
+
+form input {
+  background-color: transparent;
+  color: #000000;
+  border: none;
+  height: 2.8125rem;
+  outline: none;
+  width: -webkit-fill-available;
+  border-radius: 8px;
+  padding-left: 10px;
+  text-align: left;
+  font-size: 1.1rem;
+  border: 1px solid #c4cbda;
+  margin-bottom: 1rem;
+  transition: all 0.15s ease-in-out;
+}
+
+form input:focus{
+  border: 1px solid #c4cbda;
+  outline: 0;
+  box-shadow: 0 0 0 0.3rem rgba(0, 123, 255, 0.25), 0 0 0 0.1rem #80bdff ;
+
+}
+
+form input[type="text"] {
+  color: #000000;
+}
+
+input::placeholder {
+  color: #afb6c4;
+  font-size: 14px;
+  text-align: left;
+}
+
+#botao {
+  display: block;
+  background-color: #0075ff;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 100%;
+  color: #fff;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  /* Sobe o botão */
+  cursor: pointer;
+  padding: 0.65rem;
+  transition: 0.3s all ease;
+}
+
+#botao:hover{
+  background-color: #0057bb;
+}
+
+b{
+  font-size: 1rem;
+}
+
+p {
+  color: #464646;
+}
+
+a {
+  color: #0075ff;
+  text-decoration: none;
+  margin-left: 0.3125rem;
+  transition: 0.3s all ease;
+}
+
+a:hover{
+  color: #0057bb;
+
+}
+
+.entrar {
+  font-size: 1.4em;
+  margin-bottom: 3rem;
+  font-weight: bold;
+  margin-top: 0rem;
+  text-align: center;
+}
+
+
+.mensagem {
+  margin-bottom: 1rem;
+  color: #ff3535
+}
+
+footer {
+  height: 10rem;
+  width: 100%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-image: url(../img/background\ gif.gif);
+  bottom: 0;
+}
+
+footer p{
+  color: #fff;
+}
+
+.logo-stock img{
+  max-width: 400px;
+}
+
+.login-confirm-senha #botao{
+  margin-bottom: 0;
+  margin-top: 2.5rem;
+}
+
+@media(max-width: 450px){
+  .logo-stock img{
+    max-width: 200px;
+  }
+}
